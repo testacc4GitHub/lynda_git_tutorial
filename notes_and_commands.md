@@ -83,6 +83,22 @@ $ git reset HEAD <filename>
   ```
   - this will put everything into the staging area, where all you have left to do is commit
 
+  ####Controlling state with branches
+  #####Saving master branch state
+  + So we've seen that we can go back to any point in our commit log by simply creating a branch using the hash value in the log.
+  + We can also create save points in the master branch by simply creating an offshoot branch and then never touching it (unless we decide that it's needed)
+  + to do this, just create a branch while you're in the master:
+  ``` sh
+  $ git branch               # to see what branch you're in
+  $ git branch <branch-name> # saves the current master branch state
+  # and we now have a copy of the master branch
+  ````
+  #####Merging branches together
+  + So let's say that we created a branch to try new stuff, and it works, and we want to bring the changes back into our master branch.
+  + We want to _merge_ branches.
+
+  CHANGES FROM SAVE STATE
+
 
 
 
