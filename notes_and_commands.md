@@ -4,9 +4,9 @@
 ``` sh $ git init ```
 + next, create whatever content you want to add.  
 + recall that there are three areas in your entire git project:
-++ the local repo:  that's your folder on your computer
-++ the staging area:  that's where you add to and commit from
-++ the remote repo: that's where other people can access
+   - the local repo:  that's your folder on your computer
+   - the staging area:  that's where you add to and commit from
+   - the remote repo: that's where other people can access
 + next, add the files to the staging area with one of these commands:
 ``` sh
 $ git add .     # adds all files that have recently changed in local repo
@@ -27,6 +27,8 @@ $ git config --global "bill_hicks@uic.edu"
 $ git config --global "Bill Hicks"
 ```
 + but I could be wrong
+
+####Working with the staging environment
 
 
 
