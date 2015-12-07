@@ -96,8 +96,29 @@ $ git reset HEAD <filename>
   #####Merging branches together
   + So let's say that we created a branch to try new stuff, and it works, and we want to bring the changes back into our master branch.
   + We want to _merge_ branches.
+  + Go to the branch that you want to change **to** (in this case, I want to bring in changes from some other branch to my master branch)
+  ~~~ sh
+  $ git checkout master
+  $ git branch # make sure that you're in master
+  ~~~
+  + then run the command that merges the named branch with the branch you're on (master)
+  ~~~ sh
+  $ git merge <name_of_branch_you're_bringin_into_master>
+  ~~~
+  #####Changing branch name
+  + It doesn't matter what branch you're in (I think)
+  ~~~ sh
+  $ git branch -m <old branch name> <new branch name>
+  # the -m is for "move", just like in Unix
+  ~~~
+  #####Removing an entire branch
+  + Once again, it doesn't matter what branch you're in
+  ~~~ sh
+  $ git branch -d <name of branch>
+  # the -d is for "delete", just like in Unix
+  ~~~
+  
 
-  CHANGES FROM SAVE STATE
 
 
 
